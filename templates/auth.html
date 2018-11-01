@@ -6,7 +6,7 @@
 {% block content %}
 {% set msgs = get_flashed_messages() %}
 	{% for each in msgs %}
-		<h2>{{each}}<h2>
+		<h2 style = "color:red;">{{each}}<h2>
 		<br>
 {% endfor %}
 {% block heading %}<h3>Please Sign in</h3>{% endblock %}
@@ -23,6 +23,7 @@
   <br>
   <input type = "submit" name = "sub1">
 </form>
+<br>
 Or
 {% block register %}
 <form action="/reg">
